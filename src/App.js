@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import Wrapper from "./components/Wrapper";
-import Header from "./components/Header";
+// import Wrapper from "./components/Wrapper";
+// import Header from "./components/Header";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Pokeman from "./components/Pokeman/Pokeman";
+import Search from "./components/SearchBar/Search";
 
 class App extends Component {
   constructor(props) {
@@ -13,13 +15,14 @@ class App extends Component {
   
   render() {
     return (
-      <Wrapper>
-        <Header />
-        {/* {this.state.pokeman.map(pokeman => ( */}
-          <Pokeman
-            pokeman={this.state.data}
-          />
-      </Wrapper>
+      <Router>
+        <div className='app'>
+        <Search />
+        <Route exact path="/" render={(props) => (
+              <Pokeman pokeman={this.state.data} />
+            )} />
+        </div>
+     </Router>
     );
   }
 }

@@ -10,9 +10,9 @@ font-weight: bold;
 color: rgba(0, 0, 0, 0.85);
 text-align: left;
 line-height: 24px;
-} */
+}
 
-/* .card {
+.card {
 position: absolute;
 top: 168px;
 left: 756px;
@@ -20,9 +20,9 @@ height: 252px;
 width: 220px;
 background-color: rgba(255, 255, 255, 1);
 border-radius: 2px;
-} */
+}
 
-/* .card-content {
+.card-content {
 position: absolute;
 top: 379px;
 left: 917px;
