@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Pokeman from "./components/Pokeman/Pokeman";
 import Search from "./components/SearchBar/Search";
+import Results from './components/Results';
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends Component {
         <Route exact path="/" render={(props) => (
               <Pokeman pokeman={this.state.data} />
             )} />
+            <Results />
       </Switch>
         </div>
      </Router>

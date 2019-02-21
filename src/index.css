@@ -4,8 +4,8 @@
 }
 
 html, body, #root {
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 10px;
   height: 100%;
   width: auto;
   background-color:rgba(85, 166, 156, 1);

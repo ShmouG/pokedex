@@ -1,4 +1,23 @@
  .card-title {
 font-family: 'Roboto';
+}
+.card {
+    /* order: <integer>; */
+/* left: 48px; */
+height: 252px;
+width: 220px;
+background-color: rgba(255, 255, 255, 1);
+border-radius: 2px;
+}
+.card-content {
+    /* background-color: #f08030;
+  border: solid 1px #9c531f; */
+}
+p {
+    text-transform: uppercase;
+    text-align: center;
+}
+span {
+  color: black;
 
 }
