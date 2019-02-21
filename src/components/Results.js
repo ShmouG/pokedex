@@ -1,4 +1,5 @@
 import React from 'react'
+// import PokemanCard from './Pokeman/PokemanCard'
 
 const Results = (props) => {
   const options = props.results.map(r => (

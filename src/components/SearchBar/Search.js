@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Results from '../Results';
+import './Search.css';
 
 const API_URL = 'https://intern-pokedex.myriadapps.com/api/v1/pokemon?name='
 

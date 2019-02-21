@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from './PokemanCard.css';
+import './PokemanCard.css';
 
 const PokemanCard = ({item}) => (
     <div className='col'>
