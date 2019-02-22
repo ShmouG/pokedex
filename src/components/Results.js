@@ -1,11 +1,13 @@
 import React from 'react'
-// import PokemanCard from './Pokeman/PokemanCard'
+import PokemanCard from './Pokeman/PokemanCard'
 
 const Results = (props) => {
   const options = props.results.map(r => (
-    <li key={r.id}>
-      {r.name}
-    </li>
+     <PokemanCard key={r.name} item={r} />
+      
+    // <li key={r.id}>
+    //   {r.name}
+    // </li>
   ))
   return <ul>{options}</ul>
 }

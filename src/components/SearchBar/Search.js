@@ -6,10 +6,13 @@ import './Search.css';
 const API_URL = 'https://intern-pokedex.myriadapps.com/api/v1/pokemon?name='
 
 class Search extends Component {
-  state = {
+  constructor(props) {
+    super(props);
+    this.state = {
     query: '',
     results: []
   }
+}
 
   getInfo = () => {
     axios.get(`${API_URL}${this.state.query}`)

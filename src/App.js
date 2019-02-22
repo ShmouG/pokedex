@@ -23,7 +23,8 @@ class App extends Component {
         <Route exact path="/" render={(props) => (
               <Pokeman pokeman={this.state.data} />
             )} />
-            <Results />
+        <Route exact path="/results" render={(props) => ( <Results results={this.state.data} />
+ )}/>
       </Switch>
         </div>
      </Router>
