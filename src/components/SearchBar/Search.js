@@ -38,6 +38,7 @@ class Search extends Component {
 
   render() {
     return (
+      
       <form>
         <input
           placeholder="Pokedex"
@@ -45,6 +46,7 @@ class Search extends Component {
           onChange={this.handleInputChange}
         />
         <Results results={this.state.results} />
+       
       </form>
     )
   }
