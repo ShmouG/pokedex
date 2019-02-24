@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Error from './Error';
 import PokemanCard from './PokemanCard';
 import axios from 'axios';
-import { Count } from '../Counter';
+// import { Count } from '../Counter';
 
 
 

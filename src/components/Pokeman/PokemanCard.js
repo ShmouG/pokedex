@@ -1,6 +1,6 @@
 import React from 'react';
 import './PokemanCard.css';
-import CardDetail from './CardDetail';
+// import CardDetail from './CardDetail';
 
 const PokemanCard = ({item}) => (
     <div className='col'>
