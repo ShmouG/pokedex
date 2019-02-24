@@ -19,10 +19,8 @@ class App extends Component {
         <Search />
         <Switch>
         <Route exact path="/" render={(props) => (
-              <Pokeman pokeman={this.state.data} />
-            )} />
-        <Route exact path="/results" render={(props) => ( <Results results={this.state.data} />
- )}/>
+              <Pokeman pokeman={this.state.data} /> )} />
+        <Route exact path="/results" render={(props) => ( <Results results={this.state.data} />)}/>
       </Switch>
         </div>
      </Router>

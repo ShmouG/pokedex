@@ -16,7 +16,7 @@ class Pokeman extends Component {
         };
     }
     componentDidMount() {
-        const url = `https://intern-pokedex.myriadapps.com/api/v1/pokemon`;
+        const url = `https://intern-pokedex.myriadapps.com/api/v1/pokemon?page=${22}`;
 
         axios.get(url)
          .then((response) => {
