@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Error from './Error';
 import PokemanCard from './PokemanCard';
 import axios from 'axios';
+import { Count } from '../Counter';
+
+
 
 class Pokeman extends Component {
     constructor(props) {
@@ -13,7 +16,7 @@ class Pokeman extends Component {
         };
     }
     componentDidMount() {
-        const url = `https://intern-pokedex.myriadapps.com/api/v1/pokemon?page=${2}`;
+        const url = `https://intern-pokedex.myriadapps.com/api/v1/pokemon`;
 
         axios.get(url)
          .then((response) => {
@@ -30,6 +33,8 @@ class Pokeman extends Component {
          })
         
     }
+
+    
 
     renderItems() {
         if (!this.state.error) {

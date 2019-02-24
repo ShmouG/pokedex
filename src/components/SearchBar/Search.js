@@ -38,7 +38,6 @@ class Search extends Component {
 
   render() {
     return (
-      
       <form>
         <input
           placeholder="Pokedex"
